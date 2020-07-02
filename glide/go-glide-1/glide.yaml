@@ -1,0 +1,3 @@
+package: github.com/apiang/glide/go-glide-1
+import:
+- package: github.com/wuriyanto48/floop

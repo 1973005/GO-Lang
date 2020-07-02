@@ -1,0 +1,6 @@
+hash: e999a4df278f00919b1d6ee200037470a164518196936bbe2541c599a9e03d63
+updated: 2020-06-30T18:44:21.6344101+07:00
+imports:
+- name: github.com/wuriyanto48/floop
+  version: 426c3d65ea1776577998c747cf1f2b3fe717e20d
+testImports: []
