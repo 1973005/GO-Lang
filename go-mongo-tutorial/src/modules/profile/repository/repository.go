@@ -1,0 +1,13 @@
+package main
+
+import (
+	"github.com/apiang/go-mongo-tutorial/src/modules/profile/model"
+)
+
+type ProfileRepository interface {
+	Save(*model.Profile) error
+	Update(string, model.Profile) error
+	Delete(string) error
+	FindByID(string) (*model.Profile, error)
+	FindAll() (model.Profile, error)
+}

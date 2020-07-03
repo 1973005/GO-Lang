@@ -6,7 +6,7 @@ import (
 	mgo "gopkg.in/mgo.v2"
 )
 
-func GetMongoDB() (mgo.Database, error) {
+func GetMongoDB() (*mgo.Database, error) {
 	host := os.Getenv("MONGO_HOST")
 	dbName := os.Getenv("MONGO_DB_NAME")
 
