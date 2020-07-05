@@ -2,13 +2,14 @@ package main
 
 import (
 	"fmt"
-	"github.com/apiang/gopackage-tutorial/config"
+
+	"go-work/src/apiang/gopackage-tutorial/config"
 )
 
-func main(){
+func main() {
 
 	fmt.Println("Package Tutorial")
-	
+
 	pc := config.GetPostgresconnection()
 
 	fmt.Println(pc)

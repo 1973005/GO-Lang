@@ -1,5 +1,5 @@
 package config
 
-func GetPostgresconnection() String{
+func GetPostgresconnection() string {
 	return "PostGres Connection success"
 }

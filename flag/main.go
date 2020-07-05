@@ -39,4 +39,4 @@ func login(username, password string) bool {
 //go build
 //cara runnya flag.exe
 //-h untuk tau toolsnya
-// contoh run flag.exe -U apiang -P 123456
+// contoh run (flag.exe -U apiang -P 123456)
