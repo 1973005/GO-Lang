@@ -23,7 +23,7 @@ func main() {
 	http.HandleFunc("/about", about)
 	http.HandleFunc("/contact", contact)
 	http.HandleFunc("/apply", apply)
-	http.Handle("/favicon.ico", http.NotFoundHandler())
+	http.Handle("/stuff/", http.StripPrefix("/stuff", http.FileServer(http.Dir("./assets/"))))
 	http.ListenAndServe(":8080", nil)
 }
 func idx(w http.ResponseWriter, req *http.Request) {

@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/apiang/go-mongo-tutorial/config"
-	"github.com/apiang/go-mongo-tutorial/src/modules/profile/model"
-	"github.com/apiang/go-mongo-tutorial/src/modules/profile/repository"
+	"github.com/wuryscamp/go-mongo-tutorial/config"
+	"github.com/wuryscamp/go-mongo-tutorial/src/modules/profile/model"
+	"github.com/wuryscamp/go-mongo-tutorial/src/modules/profile/repository"
 )
 
 func main() {
@@ -18,13 +18,13 @@ func main() {
 		fmt.Println(err)
 	}
 
-	profileRepository := repository.NewProfileRepositoryMongo(db, "profile")
+	//profileRepository := repository.NewProfileRepositoryMongo(db, "profile")
 
 	// saveProfile(profileRepository)
 	// updateProfile(profileRepository)
 	// deleteProfile(profileRepository)
 	// getProfile("U1", profileRepository)
-	getProfiles(profileRepository)
+	//getProfiles(profileRepository)
 }
 
 func saveProfile(profileRepository repository.ProfileRepository) {
@@ -75,10 +75,10 @@ func deleteProfile(profileRepository repository.ProfileRepository) {
 	}
 }
 
-func getProfile(id string.profileRepository repository.ProfileRepository){
+func getProfile(id string, profileRepository repository.ProfileRepository) {
 	profile, err := profileRepository.FindByID(id)
 
-	if err != nil{
+	if err != nil {
 		fmt.Println()
 	}
 
@@ -88,18 +88,17 @@ func getProfile(id string.profileRepository repository.ProfileRepository){
 	fmt.Println(profile.Email)
 }
 
-
-func getProfiles(profileRepository repository.ProfileRepository){
+func getProfiles(profileRepository repository.ProfileRepository) {
 	profiles, err := profileRepository.FindAll()
 
-	if err != nil{
+	if err != nil {
 		fmt.Println(err)
 	}
-	for _, profile := range profile{
-	fmt.Println("----------------")
-	fmt.Println(profile.ID)
-	fmt.Println(profile.FirstName)
-	fmt.Println(profile.LastName)
-	fmt.Println(profile.Email)
+	for _, profile := range profiles {
+		fmt.Println("----------------")
+		fmt.Println(profile.ID)
+		fmt.Println(profile.FirstName)
+		fmt.Println(profile.LastName)
+		fmt.Println(profile.Email)
 	}
 }

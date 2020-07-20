@@ -6,7 +6,7 @@ import (
 	mgo "gopkg.in/mgo.v2"
 	"gopkg.in/mgo.v2/bson"
 
-	"github.com/apiang/go-mongo-tutorial/src/modules/profile/model"
+	"github.com/wuryscamp/go-mongo-tutorial/src/modules/profile/model"
 )
 
 //profile repository mongo

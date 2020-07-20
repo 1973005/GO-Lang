@@ -19,7 +19,6 @@ html, body {
     color:black;
 
 }
-
 header{
     position: fixed;
     background-color: rgba(176, 255, 169, 0.705);
@@ -37,3 +36,19 @@ header > div {
     color: black;
     margin: 0.2;
 }
+
+#fta{
+    height: 100vh;
+    background-color: rgb(46, 32, 236);
+    background-image: url("/stuff/relax.jpg");
+    background-repeat: no-repeat ;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12rem;
+    color:black;
+
+}
+

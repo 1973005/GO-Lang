@@ -1,7 +1,7 @@
-package main
+package repository
 
 import (
-	"github.com/apiang/go-mongo-tutorial/src/modules/profile/model"
+	"github.com/wuryscamp/go-mongo-tutorial/src/modules/profile/model"
 )
 
 type ProfileRepository interface {
